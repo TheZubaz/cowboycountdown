@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Wild Wild west</title>
+</head>
+<body>
+    <div id="anim">
+        <p class="title">wild wild west</p>
+        <div class="bullet" id="bullet1"></div>
+        <div class="bullet" id="bullet2"></div>
+        <div class="bullet" id="bullet3"></div>
+        <div class="bullet" id="bullet4"></div>
+        <div class="bullet" id="bullet5"></div>
+    </div>
+    <div id="score">
+        <span id="score1">0</span> <span id="dash">-</span> <span id="score2">0</span>
+    </div>
+    <div class="container-fluid" id="mainbody">
+        <div class="bull" id="bull1"></div>
+        <div class="bull" id="bull2"></div>
+        <div class="bull" id="bull3"></div>
+        <div class="bull" id="bull4"></div>
+        <div class="bull" id="bull5"></div>
+        <div class="bull" id="bull6"></div>
+        <div class="bull" id="bull7"></div>
+        <div class="bull" id="bull8"></div>
+        <div class="bull" id="bull9"></div>
+        <div class="bull" id="bull10"></div>
+        <div class="row">
+            <div class="col-6 left-box fullscreencol">
+                <img class="player float-left" id="player1" src="./media/cowboy.png">
+            </div>
+            <div class="col-6 right-box fullscreencol">
+                <img class="player float-right" id="player2" src="./media/cowboy.png">
+            </div>
+        </div>
+    </div>
+    <script src="./scoring.js"></script>
+</body>
+</html>

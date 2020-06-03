@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: RioGrande;
+    src: url(./media/RioGrande.ttf);
+}
+
+body {
+    Background-color: #212529!important;
+}
+
+#score {
+    color: white;
+    font-size: 120px;
+    font-family: RioGrande;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#dash {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-box {
+    background-color: #ff4554;
+}
+.right-box {
+    background-color: #00c3e3;
+}
+.fullscreencol {
+    height: 100vh;
+    padding: 0;
+}
+
+#player1 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.player {
+    width: 85%;
+    margin-top: 10%;
+    padding: 0;
+}
+
+#anim {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-image: url("media/anim.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0;
+    animation: fadeout 3s linear;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: RioGrande;
+    font-size: 150px;
+    white-space: nowrap;
+    animation: title 1s linear;
+}
+
+
+
+.bull {
+    height: 100px;
+    width: 120px;
+    background-image: url("./media/bullet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+}
+
+#bull1 {
+    left: 5%;
+    bottom: 50%;
+    animation: bullet1 2s linear;
+}
+
+#bull2 {
+    left: 17%;
+    bottom: 5%;
+    animation: bullet2 2s linear;
+}
+
+#bull3 {
+    left: 27%;
+    top: 20%;
+    animation: bullet3 2s linear;
+}
+
+#bull4 {
+    left: 32%;
+    bottom: 30%;
+    animation: bullet4 2s linear;
+}
+
+#bull5 {
+    left: 18%;
+    bottom: 45%;
+    animation: bullet2 2s linear;
+}
+
+#bull6 {
+    right: 5%;
+    bottom: 20%;
+    animation: bullet1 2s linear;
+}
+
+#bull7 {
+    right: 14%;
+    bottom: 5%;
+    animation: bullet2 2s linear;
+}
+
+#bull8 {
+    right: 28%;
+    top: 30%;
+    animation: bullet3 2s linear;
+}
+
+#bull9 {
+    right: 32%;
+    bottom: 30%;
+    animation: bullet4 2s linear;
+}
+
+#bull10 {
+    right: 18%;
+    top: 40%;
+    animation: bullet3 2s linear;
+}
+
+.bullet {
+    height: 100px;
+    width: 120px;
+    background-image: url("./media/bullet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+}
+
+#bullet1 {
+    left: 10%;
+    bottom: 50%;
+    animation: bullet1 2s linear;
+}
+
+#bullet2 {
+    left: 30%;
+    bottom: 20%;
+    animation: bullet2 2s linear;
+}
+
+#bullet3 {
+    left: 50%;
+    top: 40%;
+    animation: bullet3 2s linear;
+}
+
+#bullet4 {
+    right: 30%;
+    bottom: 10%;
+    animation: bullet4 2s linear;
+}
+
+#bullet5 {
+    right: 10%;
+    top: 4s0%;
+    animation: bullet5 2s linear;
+}
+
+
+@keyframes title {
+    0%      { font-size: 1000px; }
+    90%     { font-size: 150px; }
+    95%     {  }
+    100%    {  }
+}
+
+@keyframes bullet1 {
+    0%     { opacity: 0; }
+    49%    { opacity: 0; }
+    50%    { opacity: 1; }
+    100%   { opacity: 1; }
+}
+
+@keyframes bullet2 {
+    0%     { opacity: 0; }
+    59%    { opacity: 0; }
+    60%    { opacity: 1; }
+    100%   { opacity: 1; }
+}
+
+@keyframes bullet3 {
+    0%     { opacity: 0; }
+    69%    { opacity: 0; }
+    70%    { opacity: 1; }
+    100%   { opacity: 1; }
+}
+
+@keyframes bullet4 {
+    0%     { opacity: 0; }
+    79%    { opacity: 0; }
+    80%    { opacity: 1; }
+    100%   { opacity: 1; }
+}
+
+@keyframes bullet5 {
+    0%     { opacity: 0; }
+    89%    { opacity: 0; }
+    90%    { opacity: 1; }
+    100%   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    0%     { opacity: 1; z-index: 2; }
+    90%    { opacity: 1; z-index: 2; }
+    100%   { display: none; z-index: 2;}
+}
